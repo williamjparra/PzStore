@@ -6,16 +6,17 @@ import Footer from '../../components/Footer';
 describe('<Footer />', () => {
   const footer = mount(<Footer />);
 
-  test('Render del componente Footer', () => {
+  test('render del componente fooret', () => {
     expect(footer.length).toEqual(1);
   });
-  test('Render del titulo', () => {
-    expect(footer.find('.Footer-title').text()).toEqual('Platzi');
+
+  test('render del titulo', () => {
+    expect(footer.find('.Footer-title').text()).toEqual('Platzi Store');
   });
 });
 
 describe('Footer Snapshot', () => {
-  test('Comprobar la UI del componente Footer', () => {
+  test('Comprobar la ui del componente Footer', () => {
     const footer = create(<Footer />);
     expect(footer.toJSON()).toMatchSnapshot();
   });

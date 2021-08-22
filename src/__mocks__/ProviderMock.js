@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { createStore } from 'redux';
 import { Router } from 'react-router-dom';
